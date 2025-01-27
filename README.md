@@ -36,7 +36,7 @@ Both the 'publisher.py' and 'subscriber.py' have constants defined at the beginn
 2) Navigating to inside the 'Q1_final' folder, run this command in your terminal: ```streamlit run Dashboard.py```
 3) The app will open in your default browser.
 
-4) ## Instructions to run the Q2, part 4 scripts:
+## Instructions to run the Q2, part 4 scripts:
 
 1) Install paho-mqtt via pip, and the Mosquitto broker from the internet.
 2) Navigating to inside the 'Q2_part-4_paho-mqtt' folder, run this in one terminal: ```python publisher.py``` and this in another: ```python subscriber.py```
