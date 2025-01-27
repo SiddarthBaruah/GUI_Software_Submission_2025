@@ -1,3 +1,11 @@
+#This is the code the streamlit app
+#Features Overview ----> Pod Tracker, Pod comparison, Weather Details, Fun Facts, Random energy saving tips, Maintenance Reminder and Live Pod positions
+#Instructions ---->  The app has 4 tabs and features are distributed across the 4 tabs according to their relevancy . 
+# For fun facts type any plane manufacturer (such as boeing,airbus etc) and you will get a fun fact about a certain model of the manufacturer
+# streamlit run "filename".py
+# will run the app
+
+
 import streamlit as st
 import pandas as pd
 import requests
