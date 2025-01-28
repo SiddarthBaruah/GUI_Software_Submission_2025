@@ -4,8 +4,8 @@ from dotenv import load_dotenv
 import requests
 import pandas as pd
 load_dotenv()
-weather_api_key = "http://api.weatherapi.com/v1/current.json"
-weather_api_url = "580887f5dea34cc095c85509252001"
+weather_api_key = "580887f5dea34cc095c85509252001"
+weather_api_url = "http://api.weatherapi.com/v1/current.json" 
 
 class weather_api:
 	def __init__(self):
