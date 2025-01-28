@@ -18,11 +18,17 @@ Transportation fun facts
 This is the end.
 
 
-```
-Create a fork
-Push your code in that repo
-Finally create a pull request
-```
-## docs:
 
-### https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request
+# Setting up Environment
+
+```bash
+$ python -m venv venv
+$ source ./venv/bin/activate
+$ pip install streamlit
+```
+
+# Running
+
+```bash
+$ streamlit run app.py
+```
