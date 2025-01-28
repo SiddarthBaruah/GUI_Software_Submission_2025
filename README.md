@@ -1,6 +1,6 @@
 # GUI_Software_Submission_2025
 First I coded the weather function
-Then the pod details are entered(I first linked excel file containing pod details to it but as it can't be submitted I didn't)
+Then the pod details are entered(I first linked excel file containing pod details to it but as all the stuff how it works can't be seen didn't do it)
 Created a function for fun facts
 Cropped and inserted image
 Energy tip which displays on opening the app(below image)
