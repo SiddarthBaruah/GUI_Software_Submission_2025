@@ -1,4 +1,5 @@
-# GUI_Software_Submission_2025
+# GUI_Software_Submission_2025_EE24B123
+# MANOJ SURYA
 import streamlit as st
 import requests
 import pandas as pd
