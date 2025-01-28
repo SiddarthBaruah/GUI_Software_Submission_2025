@@ -4,7 +4,7 @@ import random
 import os
 from dotenv import load_dotenv
 load_dotenv()
-json_api_url = os.getenv("jsonplaceholder_api_url_2")
+json_api_url = "https://jsonplaceholder.typicode.com/posts"
 class json:
 	def __init__(self):
 		pass
