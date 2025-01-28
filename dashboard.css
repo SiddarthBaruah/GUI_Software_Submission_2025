@@ -1,0 +1,49 @@
+/* Header styling */
+.header {
+    background-color: #004d00;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 24px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-family: Orbitron, sans-serif;
+}
+
+/* Filter and sort section */
+.filter-sort {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+/* Pod buttons styling */
+.pod-buttons button {
+    background: linear-gradient(to right, #00ff00, #004d00);
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: Orbitron, sans-serif;
+    transition: transform 0.2s ease-in-out, background 0.3s ease-in-out;
+}
+
+.pod-buttons button:hover {
+    transform: scale(1.1);
+    background: linear-gradient(to right, #009900, #002f00);
+}
+
+/* Map and pie chart containers */
+.map-container, .pie-chart {
+    margin: 20px 0;
+}
+
+/* Sidebar menu styling */
+.stRadio > div {
+    font-family: Orbitron, sans-serif;
+}
+
