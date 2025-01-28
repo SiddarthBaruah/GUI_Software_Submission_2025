@@ -1,10 +1,3 @@
-# GUI_Software_Submission_2025
+Overview
 
-```
-Create a fork
-Push your code in that repo
-Finally create a pull request
-```
-## docs:
-
-### https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request
+The Hyperloop Control Dashboard is a futuristic control center interface designed to monitor and manage Hyperloop pod operations. Built using Streamlit, the dashboard provides real-time data visualization, insights, and tools to optimize pod performance and safety. It integrates APIs to deliver live weather data and energy-saving tips, ensuring operational efficiency and sustainability.
