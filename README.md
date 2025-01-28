@@ -18,4 +18,6 @@ Also the api gets the temperature and recommends the suggested speed ie. if the 
 The pixel art shows the issue with the breaking system of the pod (highly unlikeely in real life).
 The suggested speed also changes according to the weather description ie. if the weather description is "Rainy" then the suggested speed changes to some safer speed for the pod
 **And that's it I hope you have a good time going thorugh my app**
-
+# **Thought Process for the 2nd question:**
+The ```general_questionnaire_and_q_2.pdf``` contains the answers for the general and the 2nd question.....
+ 
