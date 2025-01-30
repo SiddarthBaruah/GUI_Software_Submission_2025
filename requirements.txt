@@ -1,0 +1,5 @@
+streamlit==1.25.0  # For building the web application
+pandas==2.1.1      # For data manipulation and handling JSON data
+requests==2.31.0   # For making HTTP requests (used for weather API calls)
+folium==0.14.0     # For rendering maps in the application
+streamlit-folium==0.12.0  # To integrate Folium maps into Streamlit

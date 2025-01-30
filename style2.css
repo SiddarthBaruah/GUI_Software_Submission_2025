@@ -1,0 +1,170 @@
+/* style.css */
+
+:root {
+    --primary-color: rgb(255, 255, 255) !important;
+    --secondary-color: #2196F3;
+    --accent-color: #FF9800;
+    --text-color: rgb(255, 255, 255);
+    --background-color: #f4f4f4;
+    --card-background: rgb(0, 177, 64);
+    --transition-speed: 0.3s;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
+  .pod-card {
+    background-color: var(--card-background);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0, 177, 64), 0 0 20px rgb(0, 255, 150);
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important; */
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+  }
+  
+  .pod-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .pod-card h3 {
+    color: var(--primary-color);
+    margin-top: 0;
+  }
+  
+  .metric-value {
+    font-weight: bold;
+    color: var(--text-color);
+  }
+  
+  .weather-card {
+    background: linear-gradient(135deg, var(--secondary-color), #64B5F6);
+    color: white;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 20px;
+  }
+  
+  .comparison-card {
+    background-color: var(--card-background);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  .comparison-card table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .comparison-card th, .comparison-card td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .comparison-card th {
+    background-color: var(--accent-color);
+    color: white;
+  }
+  
+  /* Button styles */
+  .stButton > button {
+    background-color: var(-card-background);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    /* transition: background-color var(--transition-speed); */
+  }
+  
+  .stButton > button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Streamlit sidebar customization */
+  .sidebar .sidebar-content {
+    background-color: var(--card-background);
+    color: white;
+  }
+  
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 5px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #45a049;
+  }
+  
+  /* Responsive grid layout */
+  @media (min-width: 768px) {
+    .st-bw {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+  }
+  
+  /* Animated glow effect for important metrics */
+  @keyframes glow {
+    0% {
+      box-shadow: 0 0 5px var(--accent-color);
+    }
+    50% {
+      box-shadow: 0 0 20px var(--accent-color);
+    }
+    100% {
+      box-shadow: 0 0 5px var(--accent-color);
+    }
+  }
+  
+  .important-metric {
+    animation: glow 2s infinite;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+  /* Tooltip styles */
+  [data-tooltip] {
+    position: relative;
+    cursor: help;
+  }
+  
+  [data-tooltip]::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity var(--transition-speed), visibility var(--transition-speed);
+  }
+  
+  [data-tooltip]:hover::after {
+    opacity: 1;
+    visibility: visible;
+  }
+  

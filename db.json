@@ -1,0 +1,50 @@
+{
+    "pods": [
+      {
+        "id": "Pod-1",
+        "name": "Avishkar-1",
+        "lat": 19.0760,
+        "lon": 72.8777,
+        "speed": 800,
+        "battery": 85,
+        "status": "Operational"
+      },
+      {
+        "id": "Pod-2",
+        "name": "Avishkar-2",
+        "lat": 28.6139,
+        "lon": 77.2090,
+        "speed": 750,
+        "battery": 92,
+        "status": "Operational"
+      },
+      {
+        "id": "Pod-3",
+        "name": "Avishkar-3",
+        "lat": 13.0827,
+        "lon": 80.2707,
+        "speed": 0,
+        "battery": 100,
+        "status": "Docked"
+      },
+      {
+        "id": "Pod-4",
+        "name": "Avishkar-4",
+        "lat": 22.5726,
+        "lon": 88.3639,
+        "speed": 600,
+        "battery": 78,
+        "status": "Operational"
+      },
+      {
+        "id": "Pod-5",
+        "name": "Avishkar-5",
+        "lat": 17.3850,
+        "lon": 78.4867,
+        "speed": 0,
+        "battery": 65,
+        "status": "Maintenance"
+      }
+    ]
+  }
+  
