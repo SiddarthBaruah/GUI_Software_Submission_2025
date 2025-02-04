@@ -22,7 +22,8 @@ class individual_page:
 				'latitude':[latitude],
 				'longitude':[longitude]
 			})
-			data2 = weather_api.get_weather_details(x)
+			data_2 = weather_api()
+			data2 = data_2.get_weather_details(x)
 			st.write(f"**Weather Description:** {st.session_state[f'weather_description{x}']}")
 			st.write(f"**Temperature:** {st.session_state[f'temperature{x}']}"+str("°C"))
 			st.write(f"**Pod Status**: {st.session_state[f'pod_status{x}']}")
@@ -34,19 +35,19 @@ class individual_page:
 				placeholder = st.empty()
 				while st.session_state[f"battery_level{x}"]>0:
 					st.session_state[f"battery_level{x}"] -= 0.2
-					time.sleep(8)
+					time.sleep(0.8)
 					st.session_state[f"speed{x}"] -= 2
-					time.sleep(8)
+					time.sleep(0.8)
 					st.session_state[f"speed{x}"] += 1
-					time.sleep(8)
+					time.sleep(0.8)
 			st.write(f"**Due to the *excellent battery* that the avishkar team has placed in these pods the battery percentage only lowers for every 30 mins 😏**")
 			if int(st.session_state[f'battery_level{x}']) <= 20:
 				st.error(f"**Please park the pod to the nearest docking station and charge the battery. Thank you.**")
 			st.write(f"**Maintenance:** {st.session_state[f'maintenance{x}']}")
 			st.write(f"**Suggested Speed:** {int(st.session_state[f'speed{x}'])+5}"+str(" km/h"))
-			if f"{st.session_state[f"weather_description{x}"]}" == "Rainy":
-				st.write(f"**Suggest Speed:** Due to severe climatic condition outside ({st.session_state[f"pod_status{x}"]}) we recommend you go at a speed of 700 km/h")
-			elif float(f"{st.session_state[f"temperature{x}"]}") <= 1.7:
+			if f"{st.session_state[f'weather_description{x}']}" == "Rainy":
+				st.write(f"**Suggest Speed:** Due to severe climatic condition outside ({st.session_state[f'pod_status{x}']}) we recommend you go at a speed of 700 km/h")
+			elif float(f"{st.session_state[f'temperature{x}']}") <= 1.7:
 				st.write(f"**Suggested Speed:** Dues to very low temperature of about {st.session_state[f'temperature{x}']} we recommend you lower you speed to about 600 km/h")
 			st.write(f"**POD Overview:**")
 
@@ -67,14 +68,14 @@ class individual_page:
 			image15 = Image.open('services/images/15.png')
 			image16 = Image.open('services/images/16.png')
 
-			if f"{st.session_state[f"maintenance{x}"]}" == 'Major':
+			if f"{st.session_state[f'maintenance{x}']}" == 'Major':
 				image_major = random.choices([image12,image13,image14], k=1)
 				if image_major not in st.session_state:
 					st.session_state[image_major] = image_major
 				st.image(image_major)
-				st.markdown(f"**The white squares show the brakes which have not been damaged and the <span style='color: red;'>red</span> ones show the brakes which have been damaged.**", unsafe_allow_html = True)
+				st.markdown("**The white squares show the brakes which have not been damaged and the <span style='color: red;'>red</span> ones show the brakes which have been damaged.**", unsafe_allow_html = True)
 				st.error(f"**please contact the engineer immediatley** __if you don't want to die__ lol and **stop to the nearest docking station** ")
-			elif f"{st.session_state[f"maintenance{x}"]}" == 'Minor':
+			elif f"{st.session_state[f'maintenance{x}']}" == 'Minor':
 				image_minor = random.choices([image1,image2,image3,image4,image5,image6,image7,image8,image9,image10], k=1)
 				if image_minor not in st.session_state:
 					st.session_state[image_minor] = image_minor
